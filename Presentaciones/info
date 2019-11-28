@@ -1,0 +1,10 @@
+Native
+- Puede interactuar con cualquier caracteristica del dispositivo (Informacion, Hardware)
+- Se tienen que instalar en el dispositivo
+- Funcionan mas rapido al poder optimizarla segun el dispositivo
+- Cuestan mas tiempo en desarrollar ya que se tiene que hacer una distinta para cada sistema (con React Native no)
+
+
+Web Mobile
+- Acceden a una cantidad limitada de caracteristicas
+- Se acceden desde el navegador
