@@ -1,20 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Counter from './components/Counter';
+import Index from './components/Index';
+import Play from './components/Play';
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
+const MainNavigator = createStackNavigator({
+  Index: {screen: Index},
+  Play: {screen: Play},
+});
+
+const App = createAppContainer(MainNavigator);
+
+export default App;
+
+/*
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Counter />
-    </View>
+    <Index />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+*/
